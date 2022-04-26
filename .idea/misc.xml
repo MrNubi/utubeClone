@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/New/utubeClone/app/src/main/res/layout/activity_main.xml" value="0.10989583333333333" />
-        <entry key="..\:/New/utubeClone/app/src/main/res/layout/fragment_player.xml" value="0.11354166666666667" />
+        <entry key="..\:/New/utubeClone/app/src/main/res/drawable/shape_circle.xml" value="0.1245" />
+        <entry key="..\:/New/utubeClone/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/New/utubeClone/app/src/main/res/layout/fragment_player.xml" value="0.1" />
+        <entry key="..\:/New/utubeClone/app/src/main/res/layout/item_vidio_list_rc.xml" value="0.11354166666666667" />
         <entry key="..\:/New/utubeClone/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16" />
+        <entry key="..\:/New/utubeClone/app/src/main/res/xml/item_vidio_list_rc.xml" value="0.11354166666666667" />
       </map>
     </option>
   </component>
