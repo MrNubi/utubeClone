@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/New/utubeClone/app/src/main/res/drawable-v24/ic_baseline_pause_24.xml" value="0.121" />
         <entry key="..\:/New/utubeClone/app/src/main/res/drawable/shape_circle.xml" value="0.1245" />
         <entry key="..\:/New/utubeClone/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/New/utubeClone/app/src/main/res/layout/fragment_player.xml" value="0.1" />

@@ -13,7 +13,7 @@ import com.beyond.utubeclone.model.VidioModel
 import com.bumptech.glide.Glide
 
 
-class VidioRcAdapter: androidx.recyclerview.widget.ListAdapter<VidioModel, VidioRcAdapter.ViewHolder>(difUtil) {
+class VidioRcAdapter(val callback: (String, String) -> Unit): androidx.recyclerview.widget.ListAdapter<VidioModel, VidioRcAdapter.ViewHolder>(difUtil) {
     inner class ViewHolder(view : View) : RecyclerView.ViewHolder(view) {
         fun bind(item:VidioModel){
             val titleTV = itemView.findViewById<TextView>(R.id.titleTextView)
@@ -24,6 +24,10 @@ class VidioRcAdapter: androidx.recyclerview.widget.ListAdapter<VidioModel, Vidio
             subTitleTV.text = item.subtitle
             Glide.with(thumbnailImgV.context).load(item.thumb).override(400,230).centerCrop().into(thumbnailImgV)
             Log.d("텀브", "${item.thumb}")
+
+            itemView.setOnClickListener {
+                callback(item.sources, item.title)
+            }
         }
 
     }

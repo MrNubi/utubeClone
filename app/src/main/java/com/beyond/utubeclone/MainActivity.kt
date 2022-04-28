@@ -24,7 +24,15 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragmentContainer, PlayerFragment())
             .commit()
-        adapterVL = VidioRcAdapter()
+        adapterVL = VidioRcAdapter(callback = { url, title ->
+            supportFragmentManager.fragments.find{it is PlayerFragment}?.let{
+                //supportFragmentManager를 이용, 이 액티비티에 attach되있는 모든 프래그먼트를 가져온 후에,
+                //find{}로 it이 PlayerFragment인 애만 남긴 것, 그 후 let으로 넘겨줌
+                (it as PlayerFragment).playVDOwithURL(url, title)
+                //it을 PlayerFragment로 형변환, 그 후 그 안의 fun 가져오기
+            }
+
+        })
         val Rv = findViewById<RecyclerView>(R.id.mainRecyclerView)
         Rv.adapter = adapterVL
         Rv.layoutManager = LinearLayoutManager(this)
