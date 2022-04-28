@@ -48,6 +48,7 @@
         app:layout_constraintTop_toTopOf="@id/bottomPlayerControlButton" />
 
     <androidx.recyclerview.widget.RecyclerView
+
         android:id="@+id/fragmentRecyclerView"
         android:backgroundTint="#BCFAED"
         android:layout_width="0dp"
@@ -55,7 +56,7 @@
         android:background="@color/white"
         android:clipToPadding="false"
         android:nestedScrollingEnabled="false"
-        android:padding="16dp"
+        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
