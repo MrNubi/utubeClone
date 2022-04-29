@@ -50,6 +50,7 @@ class PlayerFragment:  Fragment(R.layout.fragment_player) {
         super.onDestroy()
         binding = null
         player?.release()
+
     }
 
     override fun onStop() {
